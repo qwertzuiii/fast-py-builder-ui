@@ -1,0 +1,7 @@
+{
+    "$file": "C:/EXAMPLE/PATH/test.py",
+    "$name": "exampleFile",
+    "$icon": false,
+    "$add-data": ["C:/X_AMPLE/plugins/pypy.py;plugins/", "C:/HELLO/uranus.py;."],
+    "$seeconsole": false
+}
