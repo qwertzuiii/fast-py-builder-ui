@@ -12,7 +12,7 @@ yes, if you open the program (recommended in a Folder, that is in the Environmen
 
 To make your own one, look in [/build.json](https://github.com/qwertzuiii/fast-py-builder-ui/blob/main/build.json)!
 
-![](https://github.com/qwertzuiii/fast-py-builder-ui/blob/main/readmefiles/gif.gif | width=200)
+<img src="readmefiles/gif.gif" data-canonical-src="readmefiles/gif.gif" width="720"/>
 
 ---
 ## TODOs
