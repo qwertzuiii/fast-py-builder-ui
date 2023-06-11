@@ -10,6 +10,18 @@ xml = """<?xml version="1.0" encoding="UTF-8"?>
     <height>312</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>541</width>
+    <height>312</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>541</width>
+    <height>312</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Py-Build</string>
   </property>
@@ -32,7 +44,7 @@ xml = """<?xml version="1.0" encoding="UTF-8"?>
        <x>10</x>
        <y>20</y>
        <width>501</width>
-       <height>20</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="placeholderText">
@@ -58,7 +70,7 @@ xml = """<?xml version="1.0" encoding="UTF-8"?>
        <x>10</x>
        <y>20</y>
        <width>421</width>
-       <height>20</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="placeholderText">
@@ -71,7 +83,7 @@ xml = """<?xml version="1.0" encoding="UTF-8"?>
        <x>440</x>
        <y>20</y>
        <width>75</width>
-       <height>23</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="text">
@@ -156,6 +168,19 @@ xml = """<?xml version="1.0" encoding="UTF-8"?>
       <string>Command</string>
      </property>
     </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_batch">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>280</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create Batch File</string>
+    </property>
    </widget>
   </widget>
  </widget>

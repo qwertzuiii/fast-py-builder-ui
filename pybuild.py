@@ -12,6 +12,21 @@ def load_json(jsonfile):
     """Returns a json file as a Dictionary"""
     return json.loads(open(jsonfile, 'r').read())
 
+def create_batch(command, with_finish_msg=False, before="@echo off"):
+    """Creates a batch file to run a command"""
+
+    if with_finish_msg:
+        finish = """
+echo.
+echo Finished!
+echo.
+pause >nul"""
+    else:
+        finish = ""
+
+    batchfile = open("build.bat", "w")
+    batchfile.write(before + '\n' + command + finish)
+    batchfile.close()
 
 class MainApp(QMainWindow, QWidget):
     def __init__(self):
@@ -32,7 +47,13 @@ class MainApp(QMainWindow, QWidget):
         self.btn_Build.clicked.connect(self.start)
         self.btn_Apply.clicked.connect(self.buildfile_load_cstm)
         self.combo_FileType.currentTextChanged.connect(self.onefile_changed)
+        self.btn_batch.clicked.connect(self.make_batch)
     
+    def make_batch(self):
+        """Creates a batch file to run a command"""
+        command = self.line_Command.toPlainText()
+        create_batch(command, True)
+
     def buildfile_load(self):
         j = load_json(buildfile)
         self.line_File.setText(j['$file'])
