@@ -1,3 +1,5 @@
+## Not longer maintained! Go to [v2](https://github.com/qwertzuiii/pybuild_v2)
+
 #### [Download](https://github.com/qwertzuiii/fast-py-builder-ui/releases/latest)
 
 # Py-Build
